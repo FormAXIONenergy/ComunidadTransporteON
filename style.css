@@ -20,10 +20,11 @@ form{
     display: flex;
     flex-direction: column;
     padding: 50px;
-    width: 710px;
+    max-width: 710px;
     box-shadow: 0 0 20px rgba(250, 243, 243, 0.4);
     text-align: center;
     border-radius: 8px;
+    margin: auto;
 }
 
 form h2{
@@ -80,13 +81,6 @@ b, p{
     color: aliceblue;
 }
 
-img{
-    padding-bottom: 15%;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    
-}
 
 h2{
     text-align: center;
@@ -105,12 +99,19 @@ div{
     background-color: transparent;
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    padding: 20px;
+    max-width: 710px;
     text-align: center;
-    align-items: center;
-    padding-left: 35%;
-    padding-right: 1%;
+    border-radius: 8px;
     
+}
+
+form img{
+     max-width: 100%; /* nunca será más ancha que el form */
+  height: auto;    /* mantiene proporción */
+  display: block;  /* elimina espacios extra abajo de la imagen */
+  margin: 0 auto;  /* centra la imagen */
+
 }
 
 
