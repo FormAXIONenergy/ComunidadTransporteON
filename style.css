@@ -27,14 +27,6 @@ form{
     margin: auto;
 }
 
-form img{
-     max-width: 100%; /* nunca será más ancha que el form */
-  height: auto;    /* mantiene proporción */
-  display: block;  /* elimina espacios extra abajo de la imagen */
-  margin: 0 auto;  /* centra la imagen */
-
-}
-
 form h2{
 
     font-size: 23px;
@@ -74,7 +66,7 @@ input{
     box-shadow: 2px;
 }
 
-@media (max-width:991px){
+@media (max-width:700px){
     body{
         padding: 30px;
 
@@ -108,11 +100,60 @@ div{
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 710px;
+    max-width: 700px;
     text-align: center;
     border-radius: 8px;
     
 }
+
+form img{
+    max-width: 100%; /* nunca será más ancha que el form */
+    height: auto;    /* mantiene proporción */
+    display: block;  /* elimina espacios extra abajo de la imagen */
+    margin: 0 auto;  /* centra la imagen */
+
+}
+
+img{
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    margin: auto;
+}  
+
+#loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.9);
+      display: none; /* Oculto al inicio */
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      font-family: Arial, sans-serif;
+      font-size: 20px;
+      color: #333;
+    }
+
+    /* Animación spinner */
+    .spinner {
+      border: 6px solid #f3f3f3;
+      border-top: 6px solid #3498db;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-right: 15px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+  
 
 
 
