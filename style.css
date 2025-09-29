@@ -27,6 +27,14 @@ form{
     margin: auto;
 }
 
+form img{
+     max-width: 100%; /* nunca será más ancha que el form */
+  height: auto;    /* mantiene proporción */
+  display: block;  /* elimina espacios extra abajo de la imagen */
+  margin: 0 auto;  /* centra la imagen */
+
+}
+
 form h2{
 
     font-size: 23px;
@@ -106,12 +114,7 @@ div{
     
 }
 
-form img{
-     max-width: 100%; /* nunca será más ancha que el form */
-  height: auto;    /* mantiene proporción */
-  display: block;  /* elimina espacios extra abajo de la imagen */
-  margin: 0 auto;  /* centra la imagen */
 
-}
+
 
 
