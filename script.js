@@ -9,6 +9,8 @@
     document.getElementById("formON").addEventListener("submit", function(e) {
       e.preventDefault(); // evita que se abra la página del action
 
+      document.getElementById("loader").style.display = "flex";
+
       const formData = new FormData(e.target);
 
       fetch(SCRIPT_URL, {
@@ -23,6 +25,7 @@
       .catch((error) => {
         console.error("Error al enviar:", error);
         alert("No se pudo enviar el formulario.");
+        document.getElementById("loader").style.display = "none"; // ocultar si falla
       });
     });
 //    document.getElementById(form , 'formON').addEventListener("submit", function(e) {
@@ -32,4 +35,6 @@
      //window.location.href = "success.html"; // Redirige a otra página
      
        //});
+     
+
      
